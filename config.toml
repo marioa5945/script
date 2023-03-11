@@ -1,0 +1,41 @@
+operators = [
+  "Update image",
+  "Clone all projects",
+  "Pull all projects",
+  "Yarn all projects"
+]
+
+[cmds]
+updateImage = [
+  "cd ./products/static-lib && git pull --rebase",
+  "cd ./products/static-lib && git add .",
+  "cd ./products/static-lib && git commit -m add",
+  "cd ./products/static-lib && git push",
+]
+cloneList = [
+  "cd products && git clone git@gitlab.preclight.com:zhuxueliang/uni-magic-box.git",
+  "cd products && git clone git@gitlab.preclight.com:zhuxueliang/gest.git",
+  "cd products && git clone git@gitlab.preclight.com:zhuxueliang/mobile.git",
+  "cd products && git clone git@gitlab.preclight.com:zhuxueliang/static-lib.git",
+  "cd products && git clone git@gitlab.preclight.com:zhuxueliang/uniapp-mailk-tea.git",
+  "cd products && git clone git@gitlab.preclight.com:sunjin/shiguang_h5.git",
+  "cd products && git clone git@gitlab.preclight.com:sunjin/lab.git",
+]
+pullList = [
+  "cd ./products/uni-magic-box && git pull",
+  "cd ./products/gest && git pull",
+  "cd ./products/mobile && git pull",
+  "cd ./products/static-lib && git pull",
+  "cd ./products/uniapp-mailk-tea && git pull",
+  "cd ./products/shiguang_h5/fe_workspace && git pull",
+  "cd ./products/lab/fe_workspace && git pull"
+]
+yarnList = [
+  "cd ./products/uni-magic-box && yarn",
+  "cd ./products/gest && yarn",
+  "cd ./products/mobile && yarn",
+  "cd ./products/static-lib && yarn",
+  "cd ./products/uniapp-mailk-tea && yarn",
+  "cd ./products/shiguang_h5 && yarn",
+  "cd ./products/lab && yarn"
+]
